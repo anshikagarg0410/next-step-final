@@ -1,31 +1,120 @@
-<%- include('partials/boilerplate', { title: 'Career Opportunities' }) %>
-<div class="career-container">
-    <h1>Career Opportunities</h1>
-    <p>Explore the latest job openings tailored for you!</p>
-    <div class="job-listings">
-        <!-- Example job card -->
-        <div class="job-card">
-            <h2>Software Engineer</h2>
-            <p>Company: Tech Innovators</p>
-            <p>Location: Remote</p>
-            <p>Description: Work on cutting-edge AI solutions.</p>
-            <a href="#" class="apply-btn">Apply Now</a>
-        </div>
-        <div class="job-card">
-            <h2>Data Analyst</h2>
-            <p>Company: Data Insights</p>
-            <p>Location: New York, NY</p>
-            <p>Description: Analyze and visualize data for business growth.</p>
-            <a href="#" class="apply-btn">Apply Now</a>
-        </div>
-        <!-- Add more job cards as needed -->
+<%- include('partials/career_template', { title: "Recommended Jobs" }) %>
+<div class="hero">
+        <h1>Your Next Career Move Awaits</h1>
+        <p>Smart AI matching for jobs aligned to your skills and goals.</p>
     </div>
-</div>
-<style>
-.career-container { padding: 40px 20px; text-align: center; }
-.job-listings { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
-.job-card { background: #CAB0DD; border-radius: 16px; padding: 24px 32px; width: 320px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: left; }
-.job-card h2 { color: #6910A8; margin-bottom: 10px; }
-.apply-btn { display: inline-block; margin-top: 12px; background: #6910A8; color: #fff; padding: 8px 20px; border-radius: 20px; text-decoration: none; transition: background 0.2s; }
-.apply-btn:hover { background: #4b0b74; }
-</style>
+
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <label>Search</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                     <input type="text" placeholder="Job title or company...">
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Location</label>
+                <select>
+                     <option>Any location</option>
+                    <option>Remote</option>
+                    <option>On-site</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                 <label>Work Type</label>
+                <select>
+                    <option>Any type</option>
+                    <option>Full-time</option>
+                    <option>Part-time</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>&nbsp;</label>
+                <button class="btn-filters">
+                    <i class="fa-solid fa-filter"></i> More Filters
+                 </button>
+            </div>
+        </div>
+
+        <div class="job-listings">
+            <div class="card">
+                <div class="card-header">
+                     <div class="job-info">
+                        <div class="job-icon">🚀</div>
+                        <div class="job-text">
+                             <h2>Software Engineer</h2>
+                            <p>Innovate Solutions</p>
+                        </div>
+                    </div>
+                     <span class="match">92% match</span>
+                </div>
+                <div class="description">
+                    Join our team to build next-generation web applications using modern technologies.
+                </div>
+                <div class="info-row">
+                    <div><i class="fa-solid fa-location-dot"></i> San Francisco, CA</div>
+                    <div><i class="fa-solid fa-clock"></i> Full-time</div>
+                     <div><i class="fa-solid fa-dollar-sign"></i> $120,000/year</div>
+                    <div><i class="fa-solid fa-users"></i> 82 applicants</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Mid-level</span>
+                     <span class="tag">Hybrid</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag green">✓ Health Insurance</span>
+                    <span class="tag green">✓ 401(k) Matching</span>
+                </div>
+                <small>Posted 3 days ago</small>
+                <div class="card-footer">
+                    <button class="btn-learn"><i class="fa-solid fa-up-right-from-square"></i> Learn More</button>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="job-info">
+                        <div class="job-icon">🎨</div>
+                        <div class="job-text">
+                            <h2>Product Designer</h2>
+                             <p>Creative Co.</p>
+                        </div>
+                    </div>
+                     <span class="match">85% match</span>
+                </div>
+
+                <div class="description">
+                    Design intuitive and beautiful user experiences for our suite of creative tools.
+                </div>
+
+                <div class="info-row">
+                    <div><i class="fa-solid fa-location-dot"></i> Remote</div>
+                    <div><i class="fa-solid fa-clock"></i> Full-time</div>
+                     <div><i class="fa-solid fa-dollar-sign"></i> $95,000/year</div>
+                    <div><i class="fa-solid fa-users"></i> 56 applicants</div>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">Entry-level</span>
+                     <span class="tag">Remote</span>
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">Figma</span>
+                     <span class="tag green">✓ Flexible Hours</span>
+                    <span class="tag green">✓ Creative Stipend</span>
+                </div>
+
+                <small>Posted 1 week ago</small>
+
+                <div class="card-footer">
+                    <button class="btn-learn"><i class="fa-solid fa-up-right-from-square"></i> Learn More</button>
+                    <button class="btn-apply">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
