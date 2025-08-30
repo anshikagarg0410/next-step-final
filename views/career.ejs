@@ -1,0 +1,31 @@
+<%- include('partials/boilerplate', { title: 'Career Opportunities' }) %>
+<div class="career-container">
+    <h1>Career Opportunities</h1>
+    <p>Explore the latest job openings tailored for you!</p>
+    <div class="job-listings">
+        <!-- Example job card -->
+        <div class="job-card">
+            <h2>Software Engineer</h2>
+            <p>Company: Tech Innovators</p>
+            <p>Location: Remote</p>
+            <p>Description: Work on cutting-edge AI solutions.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        <div class="job-card">
+            <h2>Data Analyst</h2>
+            <p>Company: Data Insights</p>
+            <p>Location: New York, NY</p>
+            <p>Description: Analyze and visualize data for business growth.</p>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        <!-- Add more job cards as needed -->
+    </div>
+</div>
+<style>
+.career-container { padding: 40px 20px; text-align: center; }
+.job-listings { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
+.job-card { background: #CAB0DD; border-radius: 16px; padding: 24px 32px; width: 320px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: left; }
+.job-card h2 { color: #6910A8; margin-bottom: 10px; }
+.apply-btn { display: inline-block; margin-top: 12px; background: #6910A8; color: #fff; padding: 8px 20px; border-radius: 20px; text-decoration: none; transition: background 0.2s; }
+.apply-btn:hover { background: #4b0b74; }
+</style>

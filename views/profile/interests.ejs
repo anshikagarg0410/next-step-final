@@ -1,0 +1,48 @@
+<%- include('../partials/interests_template', { title: 'Your Interests' }) %>
+<div class="container">
+        <h1>Find Your Spark</h1>
+        <p class="subtext"style="font-family: 'Instrument Sans', sans-serif; font-size: 18px;">Let AI guide your career—just tell us a bit about you.</p>
+
+        <div class="progress-wrapper">
+            <div class="progress-text"> <span class="progress-step"style="font-family: 'Instrument Sans', sans-serif;">Step 2 of 4</span> <span
+                    class="progress-percent"style="font-family: 'Instrument Sans', sans-serif;">50% Complete</span> </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"></div>
+            </div>
+        </div>
+        <p style="margin-top: 20px;">tell us what excites you -- pick all the fields that inspire your future</p>
+
+        <div class="interest-box">
+            <div class="interest-header">
+                <img src="https://static.thenounproject.com/png/3654360-200.png" alt="Interest Icon">
+                <div>
+                    <h2>Your Interests</h2>
+                    <p style="font-family: 'Instrument Sans', sans-serif;">What fields excite you most? (Select all that apply)</p>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <label class="interest-option"><input type="checkbox"> AI & Data Science</label>
+                <label class="interest-option"><input type="checkbox"> Law & Legal Studies</label>
+                <label class="interest-option"><input type="checkbox"> Design & Creativity</label>
+                <label class="interest-option"><input type="checkbox"> Science & Research</label>
+                <label class="interest-option"><input type="checkbox"> Healthcare & Medicine</label>
+                <label class="interest-option"><input type="checkbox"> Arts & Entertainment</label>
+                <label class="interest-option"><input type="checkbox"> Content Creation</label>
+                <label class="interest-option"><input type="checkbox"> Sports & Fitness</label>
+                <label class="interest-option"><input type="checkbox"> Gaming</label>
+                <label class="interest-option"><input type="checkbox"> Writing & Journalism</label>
+                <label class="interest-option"><input type="checkbox"> Travel & Tourism</label>
+                <label class="interest-option"><input type="checkbox"> Marketing & Advertising</label>
+            </div>
+
+            <div class="other-field">
+                Other: <input type="text" placeholder="Your interest">
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button id="prevBtn">&larr; Previous</button>
+            <button id="nextBtn">Next &rarr;</button>
+        </div>
+    </div>

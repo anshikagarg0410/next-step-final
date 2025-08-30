@@ -1,0 +1,335 @@
+<%- include('partials/internships_template', { title: "Recommended Internships" }) %>
+<div class="hero">
+        <h1>Find your future — intelligently</h1>
+        <p>Smart AI matching for internships aligned to your skills and goals.</p>
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" data-tab="discover">Discover</button>
+            <button class="tab" data-tab="saved">Saved (2)</button>
+            <button class="tab" data-tab="applications">Applications</button>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label>Search</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Job title or company...">
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Location</label>
+                <select>
+                    <option>Any location</option>
+                    <option>Remote</option>
+                    <option>On-site</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Work Type</label>
+                <select>
+                    <option>Any type</option>
+                    <option>Full-time</option>
+                    <option>Part-time</option>
+                    <option>Internship</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>&nbsp;</label>
+                <button class="btn-filters">
+                    <i class="fa-solid fa-filter"></i> More Filters
+                </button>
+            </div>
+        </div>
+
+        <div id="discover" class="tab-content active">
+            <div class="job-listings">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <div class="job-icon">🚀</div>
+                            <div class="job-text">
+                                <h2>Data Science Intern</h2>
+                                <p>TechForward Inc.</p>
+                            </div>
+                        </div>
+                        <span class="match">95% match</span>
+                    </div>
+                    <div class="description">
+                        Work on real-world machine learning projects and contribute to our AI-powered analytics
+                        platform.
+                    </div>
+                    <div class="info-row">
+                        <div><i class="fa-solid fa-location-dot"></i> San Francisco, CA</div>
+                        <div><i class="fa-solid fa-clock"></i> 3 months</div>
+                        <div><i class="fa-solid fa-dollar-sign"></i> $2,000/month</div>
+                        <div><i class="fa-solid fa-users"></i> 45 applicants</div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Intermediate</span>
+                        <span class="tag">Remote</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Statistics</span>
+                        <span class="tag green">✓ Mentorship</span>
+                        <span class="tag green">✓ Certificate</span>
+                        <span class="tag green">✓ Full-time offer potential</span>
+                    </div>
+                    <small>Posted 2 days ago</small>
+                    <div class="card-footer">
+                        <button class="btn-learn"><i class="fa-solid fa-up-right-from-square"></i> Learn More</button>
+                        <button class="btn-apply">Apply Now</button>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <div class="job-icon">🔍</div>
+                            <div class="job-text">
+                                <h2>UX Research Intern</h2>
+                                <p>UserFirst Labs</p>
+                            </div>
+                        </div>
+                        <span class="match">88% match</span>
+                    </div>
+
+                    <div class="description">
+                        Conduct user research studies and help improve product usability through data-driven insights.
+                    </div>
+
+                    <div class="info-row">
+                        <div><i class="fa-solid fa-location-dot"></i> Seattle, WA</div>
+                        <div><i class="fa-solid fa-clock"></i> 3 months</div>
+                        <div><i class="fa-solid fa-dollar-sign"></i> $1,500/month</div>
+                        <div><i class="fa-solid fa-users"></i> 28 applicants</div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Beginner</span>
+                        <span class="tag">Remote</span>
+                        <span class="tag">User Research</span>
+                        <span class="tag">Statistics</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">+1 more</span>
+                        <span class="tag green">✓ Research publication</span>
+                        <span class="tag green">✓ Conference speaking</span>
+                        <span class="tag green">✓ UX certification</span>
+                    </div>
+
+                    <small>Posted 5 days ago</small>
+
+                    <div class="card-footer">
+                        <button class="btn-learn"><i class="fa-solid fa-up-right-from-square"></i> Learn More</button>
+                        <button class="btn-apply">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <div class="job-icon">📈</div>
+                            <div class="job-text">
+                                <h2>Marketing Analytics Intern</h2>
+                                <p>GrowthMetrics</p>
+                            </div>
+                        </div>
+                        <span class="match">85% match</span>
+                    </div>
+
+                    <div class="description">
+                        Analyze marketing campaigns and create data visualizations to drive growth strategies.
+                    </div>
+
+                    <div class="info-row">
+                        <div><i class="fa-solid fa-location-dot"></i>Chicago, IL</div>
+                        <div><i class="fa-solid fa-clock"></i> 4 months</div>
+                        <div><i class="fa-solid fa-dollar-sign"></i> $2,200/month</div>
+                        <div><i class="fa-solid fa-users"></i> 38 applicants</div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Intermediate</span>
+                        <span class="tag">Hybrid</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Marketing</span>
+                        <span class="tag">+1 more</span>
+                        <span class="tag green">✓ Growth certification</span>
+                        <span class="tag green">✓ Campaign ownership</span>
+                        <span class="tag green">✓ Performance bonus</span>
+                    </div>
+
+                    <small>Posted 1 days ago</small>
+
+                    <div class="card-footer">
+                        <button class="btn-learn"><i class="fa-solid fa-up-right-from-square"></i> Learn More</button>
+                        <button class="btn-apply">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <div class="job-icon">💻</div>
+                            <div class="job-text">
+                                <h2>Software Engineer Intern</h2>
+                                <p>CodeWave Labs</p>
+                            </div>
+                        </div>
+                        <span class="match">88% match</span>
+                    </div>
+                    <div class="description">
+                        Assist in building scalable web applications with React and Node.js.
+                    </div>
+                    <div class="info-row">
+                        <div><i class="fa-solid fa-location-dot"></i> Remote</div>
+                        <div><i class="fa-solid fa-clock"></i> 3 months</div>
+                        <div><i class="fa-solid fa-dollar-sign"></i> $1,800/month</div>
+                        <div><i class="fa-solid fa-users"></i> 42 applicants</div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Beginner</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag green">✓ Certificate</span>
+                    </div>
+                    <small>Posted 5 days ago</small>
+                    <div class="card-footer">
+                        <button class="btn-learn"><i class="fa-solid fa-up-right-from-square"></i> Learn More</button>
+                        <button class="btn-apply">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <div class="job-icon">📊</div>
+                            <div class="job-text">
+                                <h2>Business Analyst Intern</h2>
+                                <p>Insight Partners</p>
+                            </div>
+                        </div>
+                        <span class="match">82% match</span>
+                    </div>
+                    <div class="description">
+                        Analyze business data and help create actionable insights for clients.
+                    </div>
+                    <div class="info-row">
+                        <div><i class="fa-solid fa-location-dot"></i> New York, NY</div>
+                        <div><i class="fa-solid fa-clock"></i> 6 months</div>
+                        <div><i class="fa-solid fa-dollar-sign"></i> $3,000/month</div>
+                        <div><i class="fa-solid fa-users"></i> 120 applicants</div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Advanced</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag green">✓ Mentorship</span>
+                    </div>
+                    <small>Posted 1 week ago</small>
+                    <div class="card-footer">
+                        <button class="btn-learn"><i class="fa-solid fa-up-right-from-square"></i> Learn More</button>
+                        <button class="btn-apply">Apply Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="saved" class="tab-content">
+            <div class="job-listings">
+                <div class="card card-minimal">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <div class="job-icon">💻</div>
+                            <div class="job-text">
+                                <h2>Software Engineer Intern</h2>
+                                <p>CodeWave Labs</p>
+                            </div>
+                        </div>
+                        <span class="match">88% match</span>
+                    </div>
+                </div>
+                <div class="card card-minimal">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <div class="job-icon">📊</div>
+                            <div class="job-text">
+                                <h2>Business Analyst Intern</h2>
+                                <p>Insight Partners</p>
+                            </div>
+                        </div>
+                        <span class="match">82% match</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="applications" class="tab-content">
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <h2>12</h2>
+                    <p>Applications Sent</p>
+                    <span class="subtext">+3 this week</span>
+                </div>
+                <div class="summary-card">
+                    <h2>3</h2>
+                    <p>Interviews Scheduled</p>
+                    <span class="subtext">+1 this week</span>
+                </div>
+                <div class="summary-card">
+                    <h2>1</h2>
+                    <p>Offers Received</p>
+                    <span class="subtext">New!</span>
+                </div>
+                <div class="summary-card">
+                    <h2>67%</h2>
+                    <p>Response Rate</p>
+                    <span class="subtext">+12% vs last month</span>
+                </div>
+            </div>
+
+            <div class="application-timeline">
+                <h3>Application Timeline</h3>
+                <p class="timeline-subtext">Track your application progress</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Interview Scheduled</h4>
+                            <p>TechForward Inc.</p>
+                        </div>
+                        <div>Tomorrow</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Application Submitted</h4>
+                            <p>DesignStudio Pro</p>
+                        </div>
+                        <div>3 days ago</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Under Review</h4>
+                            <p>StartupHub</p>
+                        </div>
+                        <div>1 week ago</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Offer Received</h4>
+                            <p>UserFirst Labs</p>
+                        </div>
+                        <div>2 weeks ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

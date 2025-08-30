@@ -1,0 +1,259 @@
+:root {
+            --font-heading: 'Inria Serif', serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --purple: #6a0dad;
+            --light-purple: #f3ebf7;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            background-color: #ffffff;
+            color: #6a0dad;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-heading);
+        }
+
+        /* Header */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background-color: #DCD9E9;
+        }
+
+        nav .logo img {
+            height: 30px;
+
+        }
+
+        nav .links a {
+            color: #6910A8;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+        }
+
+        nav .signout {
+            background-color: white;
+            color: #6910A8;
+            border: none;
+            padding: 8px 20px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .hero {
+            background-color: var(--purple);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin: 0 0 12px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Career Path Card */
+        .card {
+            background: var(--light-purple);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 85%;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--purple);
+        }
+
+        .progress-bar {
+            height: 8px;
+            border-radius: 10px;
+            background: #ffffff;
+            margin-top: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #a64cc4;
+            border-radius: 10px;
+            width: var(--progress, 0%);
+        }
+
+        /* Section Header */
+        .section-header {
+            display: flex;
+            align-items: center;
+            background: #ede2f7;
+            padding: 16px 20px;
+            border-radius: 8px 8px 0 0;
+            width: 85%;
+            margin: 30px auto 0;
+        }
+
+        .section-number {
+            background: var(--purple);
+            color: #fff;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Course Cards */
+        .course-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px auto;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 85%;
+        }
+
+        .course-info {
+            flex: 1;
+        }
+
+        .course-info h3 {
+            margin: 0;
+            color: var(--purple);
+            font-size: 18px;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+            margin-left: 8px;
+        }
+
+        .completed {
+            background: #27ae60;
+        }
+
+        .inprogress {
+            background: #00bcd4;
+        }
+
+        .notstarted {
+            background: #e67e22;
+        }
+
+        /* Tags */
+        .tags span {
+            display: inline-block;
+            background: #eee;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin: 4px 4px 0 0;
+            font-size: 12px;
+        }
+
+        /* Meta info */
+        .meta {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .meta i {
+            margin-right: 4px;
+        }
+
+
+        .progress {
+            margin-top: 8px;
+            width: 100%;
+            /* parent ke width ke hisaab se fix */
+            max-width: 1000px;
+            /* optional: ek max limit rakh lo */
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+
+        .progress-header span {
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .progress-text {
+            font-weight: bold;
+            color: #9b59b6;
+        }
+
+        .progress-bar.small {
+            height: 8px;
+            border-radius: 10px;
+            background: #ddd;
+            overflow: hidden;
+            width: 100%;
+            /* sab bar ka size same */
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--purple);
+            width: var(--progress, 0%);
+        }
+
+
+        /* Right panel */
+        .course-actions {
+            text-align: right;
+            min-width: 90px;
+        }
+
+        .course-actions .price {
+            font-weight: bold;
+            font-size: 18px;
+            color: var(--purple);
+        }
+
+        .btn-action {
+            margin-top: 8px;
+            background: #eee;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: var(--font-body);
+        }

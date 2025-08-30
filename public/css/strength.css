@@ -1,0 +1,180 @@
+:root {
+            --font-heading: 'Inria Serif', serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --primary: #6a0dad;
+            --light-bg: #f4ecf8;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            background: var(--primary);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background-color: #DCD9E9;
+        }
+
+        nav .logo img {
+            height: 30px;
+        }
+
+        nav .links a {
+            color: #6910A8;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+        }
+
+        nav .signout {
+            background-color: white;
+            color: #6910A8;
+            border: none;
+            padding: 8px 20px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        /* Progress Section */
+        .progress-wrapper {
+            width: 60%;
+            /* same width as screenshot */
+            margin: 20px auto;
+            /* center horizontally */
+        }
+
+        .progress-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .progress-bar {
+            background-color: #eee;
+            /* light purple bg */
+            border-radius: 20px;
+            height: 20px;
+            width: 100%;
+            /* same height */
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background-color: #d299ff;
+            /* white fill */
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        /* Quote */
+        .quote {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+        }
+
+        /* Strengths Box */
+        .strengths {
+            background: var(--light-bg);
+            border-radius: 12px;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            color: black;
+        }
+
+        .strengths h2 {
+            font-size: 22px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            font-family: var(--font-heading);
+        }
+
+        .strengths h2 i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+
+        .strengths p {
+            margin: 6px 0 16px;
+            font-size: 14px;
+        }
+
+        /* Checkbox Grid */
+        .strength-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .strength-options label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .strength-options input {
+            transform: scale(1.2);
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            margin: 30px auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-nav {
+            background-color: #e5d4ff;
+            color: #333;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-nav:hover {
+           background-color: #d3b8ff;
+        }
+
+
+ 
