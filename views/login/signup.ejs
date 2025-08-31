@@ -1,0 +1,30 @@
+<% layout('partials/login_template') %>
+<div class="container">
+        <div class="welcome-pane">
+            <div class="logo">
+                <img src="../img_2_logo.PNG" alt="NextStep AI Logo">
+            </div>
+            <h1>Join Your Future</h1>
+            <p>Your AI career mentor is ready to help you take the next step. Create an account to begin your journey.</p>
+            <img src="../img_1_astro.PNG" alt="AI Mentor Image" class="astro-img">
+        </div>
+        <div class="form-pane">
+            <h2>Create Your Account</h2>
+            <form action="/signup" method="POST">
+                <div class="input-group">
+                     <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                     <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+             <p class="switch-form">Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </div>

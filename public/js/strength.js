@@ -32,30 +32,6 @@ function signout() {
                 console.warn("Previous button not found with ID 'prevBtn'");
             }
 
-            // Add a click event listener to the "Next" button
-            if (nextBtn) {
-                nextBtn.addEventListener('click', function () {
-                    // Collect selected strengths before navigating
-                    const selectedStrengths = collectSelectedStrengths();
-
-                    // Validate that at least one strength is selected
-                    if (selectedStrengths.length === 0) {
-                        alert("Please select at least one strength before proceeding!");
-                        return;
-                    }
-
-                    // Store the collected data for the next page (in a real environment)
-                    // sessionStorage.setItem('userStrengths', JSON.stringify(selectedStrengths));
-
-                    // Log the collected data for debugging
-                    console.log("Selected Strengths:", selectedStrengths);
-
-                    // Navigate to the next page using relative path
-                    window.location.href = '/profile/personality';
-                });
-            } else {
-                console.warn("Next button not found with ID 'nextBtn'");
-            }
 
             // Add visual feedback for checkbox selections
             addStrengthSelectionEffects();

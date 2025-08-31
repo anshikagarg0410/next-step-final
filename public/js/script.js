@@ -38,11 +38,6 @@ signOutBtn?.addEventListener('click', () => {
     }
 });
 
-// ====== Get Started Scroll ======
-getStartedBtn?.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.location.href = '/profile/user';
-});
 
 // ====== Active Nav Link (Optional) ======
 navLinks.forEach(link => {

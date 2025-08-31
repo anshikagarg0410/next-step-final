@@ -28,26 +28,7 @@ if (prevBtn) {
 }
 
 // Add a click event listener to the "Next" button
-if (nextBtn) {
-    nextBtn.addEventListener('click', function() {
-        // Validate that at least one interest is selected
-        const selectedInterests = collectSelectedInterests();
-        
-        if (selectedInterests.length === 0) {
-            alert("Please select at least one interest before proceeding!");
-            return;
-        }
-        
-        // Store the collected data for the next page
-        // sessionStorage.setItem('userInterests', JSON.stringify(selectedInterests));
-        
-        // Log the collected data for debugging
-        console.log("Selected Interests:", selectedInterests);
 
-    // Navigate to the next page using relative path
-    window.location.href = '/profile/strengths';
-    });
-}
 
 // Function to collect the user's selected interests
 function collectSelectedInterests() {

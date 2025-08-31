@@ -3,14 +3,20 @@
     <div class="hero-text">
         <h1>YOUR AI<br> CAREER MENTOR</h1>
         <p>Discover the right career path, learn the skills you need, and unlock real opportunities — all guided by AI.</p>
-        <a href="#cards-section" class="btn">Get started</a>
+        
+        <% if (currentUser) { %>
+            <a href="/dashboard" class="btn">Go to Dashboard</a>
+        <% } else { %>
+            <a href="/signup" class="btn">Get started</a>
+        <% } %>
+
     </div>
     <img src="img_1_astro.PNG" alt="AI Mentor Image" class="hero-img">
 </section>
 <section class="cards" id="cards-section">
         <div class="card">
             <div class="number">1</div>
-            <h3>Discover Your Path</h3>
+                 <h3>Discover Your Path</h3>
             <p>Let AI uncover your strengths and passions, then match them to the career that fits you best.</p>
         </div>
         <div class="card">
@@ -25,7 +31,7 @@
         </div>
         <div class="card">
             <div class="number">4</div>
-            <h3>Unlock Opportunities</h3>
+             <h3>Unlock Opportunities</h3>
             <p>Turn your skills into success by connecting with tailored internships, hackathons, and job openings.</p>
         </div>
     </section>

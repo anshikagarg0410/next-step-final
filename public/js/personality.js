@@ -32,15 +32,6 @@ function signout() {
                 console.warn("Previous button not found with ID 'prevBtn'");
             }
 
-            // Add a click event listener to the "Submit" button
-            if (submitBtn) {
-                submitBtn.addEventListener('click', function () {
-                    handleFormSubmission();
-                });
-            } else {
-                console.warn("Submit button not found with ID 'submitBtn'");
-            }
-
             // Add visual feedback for goal selections
             addGoalSelectionEffects();
 

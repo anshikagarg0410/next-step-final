@@ -1,16 +1,20 @@
 <%- include('../partials/interests_template', { title: 'Your Interests' }) %>
-<div class="container">
+
+<form action="/profile/interests" method="POST">
+    <div class="container">
         <h1>Find Your Spark</h1>
-        <p class="subtext"style="font-family: 'Instrument Sans', sans-serif; font-size: 18px;">Let AI guide your career—just tell us a bit about you.</p>
+        <p class="subtext" style="font-family: 'Instrument Sans', sans-serif; font-size: 18px;">Let AI guide your career—just tell us a bit about you.</p>
 
         <div class="progress-wrapper">
-            <div class="progress-text"> <span class="progress-step"style="font-family: 'Instrument Sans', sans-serif;">Step 2 of 4</span> <span
-                    class="progress-percent"style="font-family: 'Instrument Sans', sans-serif;">50% Complete</span> </div>
+            <div class="progress-text">
+                <span class="progress-step" style="font-family: 'Instrument Sans', sans-serif;">Step 2 of 4</span>
+                <span class="progress-percent" style="font-family: 'Instrument Sans', sans-serif;">50% Complete</span>
+            </div>
             <div class="progress-bar">
                 <div class="progress-fill" style="width: 50%;"></div>
             </div>
         </div>
-        <p style="margin-top: 20px;">tell us what excites you -- pick all the fields that inspire your future</p>
+        <p style="margin-top: 20px;">Tell us what excites you -- pick all the fields that inspire your future</p>
 
         <div class="interest-box">
             <div class="interest-header">
@@ -22,27 +26,24 @@
             </div>
 
             <div class="grid-container">
-                <label class="interest-option"><input type="checkbox"> AI & Data Science</label>
-                <label class="interest-option"><input type="checkbox"> Law & Legal Studies</label>
-                <label class="interest-option"><input type="checkbox"> Design & Creativity</label>
-                <label class="interest-option"><input type="checkbox"> Science & Research</label>
-                <label class="interest-option"><input type="checkbox"> Healthcare & Medicine</label>
-                <label class="interest-option"><input type="checkbox"> Arts & Entertainment</label>
-                <label class="interest-option"><input type="checkbox"> Content Creation</label>
-                <label class="interest-option"><input type="checkbox"> Sports & Fitness</label>
-                <label class="interest-option"><input type="checkbox"> Gaming</label>
-                <label class="interest-option"><input type="checkbox"> Writing & Journalism</label>
-                <label class="interest-option"><input type="checkbox"> Travel & Tourism</label>
-                <label class="interest-option"><input type="checkbox"> Marketing & Advertising</label>
-            </div>
-
-            <div class="other-field">
-                Other: <input type="text" placeholder="Your interest">
+                <label class="interest-option"><input type="checkbox" name="interests" value="AI & Data Science"> AI & Data Science</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Law & Legal Studies"> Law & Legal Studies</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Design & Creativity"> Design & Creativity</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Science & Research"> Science & Research</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Healthcare & Medicine"> Healthcare & Medicine</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Arts & Entertainment"> Arts & Entertainment</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Content Creation"> Content Creation</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Sports & Fitness"> Sports & Fitness</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Gaming"> Gaming</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Writing & Journalism"> Writing & Journalism</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Travel & Tourism"> Travel & Tourism</label>
+                <label class="interest-option"><input type="checkbox" name="interests" value="Marketing & Advertising"> Marketing & Advertising</label>
             </div>
         </div>
 
         <div class="nav-buttons">
-            <button id="prevBtn">&larr; Previous</button>
-            <button id="nextBtn">Next &rarr;</button>
+            <a href="/profile/user" class="btn-nav" id="prevBtn">&larr; Previous</a>
+            <button type="submit" class="btn-nav" id="nextBtn">Next &rarr;</button>
         </div>
     </div>
+</form>

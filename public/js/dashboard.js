@@ -1,10 +1,34 @@
+// Logic for the "Explore All Matches" button
+document.addEventListener('DOMContentLoaded', () => {
+    const exploreBtn = document.getElementById('explore-matches-btn');
+    if (exploreBtn) {
+        exploreBtn.addEventListener('click', () => {
+            const hiddenMatches = document.querySelectorAll('.hidden-match');
+            hiddenMatches.forEach(match => {
+                // Toggle the display style
+                if (match.style.display === 'none' || match.style.display === '') {
+                    match.style.display = 'flex'; // Use 'flex' to match the default style of job-item
+                } else {
+                    match.style.display = 'none';
+                }
+            });
+
+            // Change the button text
+            if (exploreBtn.textContent === 'Explore All Matches') {
+                exploreBtn.textContent = 'Show Less';
+            } else {
+                exploreBtn.textContent = 'Explore All Matches';
+            }
+        });
+    }
+});
+
+
+
+
 // Navigation Functions
 function exploreAllMatches() {
     alert('Exploring all career matches... This would navigate to a detailed careers page.');
-}
-
-function viewAllInternships() {
-    alert('Viewing all internships... This would navigate to the internships page.');
 }
 
 function signout() {

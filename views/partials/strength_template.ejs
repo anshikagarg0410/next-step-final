@@ -23,8 +23,13 @@
             <a href="/internships">Internships</a>
             <a href="/career">Career</a>
         </div>
-         <button class="signout">Sign Out</button>
+        <% if(!currentUser) { %>
+    <a href="/login" class="nav-login-btn">Login</a>
+<% } else { %>
+    <a href="/logout" class="nav-login-btn">Logout</a>
+<% } %>
     </nav>
+    <%- include('./flash') %>
     <script src="/js/strength.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 <%- include('../partials/personality_template', { title: "Let’s Discover your Personality" }) %>
-<div class="container">
+
+<form action="/profile/personality" method="POST">
+    <div class="container">
         <h1>Me, Myself & My Mission</h1>
         <p>Let AI guide your career—just tell us a bit about you.</p>
 
@@ -27,56 +29,64 @@
             </div>
 
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Leader">
                     <div>
                         <div class="goal-title">The Leader</div>Goal: Lead a team or project
                     </div>
                 </div>
             </label>
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Explorer">
                     <div>
                         <div class="goal-title">The Explorer</div>Goal: Try new skills and paths
                     </div>
                 </div>
             </label>
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Thinker">
                     <div>
                         <div class="goal-title">The Thinker</div>Goal: Solve real-world problems
                     </div>
                 </div>
             </label>
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Helper">
                     <div>
                         <div class="goal-title">The Helper</div>Goal: Make a difference for others
                     </div>
                 </div>
             </label>
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Speaker">
                     <div>
                         <div class="goal-title">The Speaker</div>Goal: Inspire through communication
                     </div>
                 </div>
             </label>
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Organizer">
                     <div>
                         <div class="goal-title">The Organizer</div>Goal: Plan and manage events
                     </div>
                 </div>
             </label>
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Innovator">
                     <div>
                         <div class="goal-title">The Innovator</div>Goal: Build something impactful
                     </div>
                 </div>
             </label>
             <label class="goal-box">
-                <div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <input type="checkbox" name="personality" value="The Dreamer">
                     <div>
                         <div class="goal-title">The Dreamer</div>Goal: Express through art or writing
                     </div>
@@ -86,6 +96,7 @@
     </div>
 
     <div class="nav-buttons">
-        <button class="btn-nav" id="prevBtn">&larr; Previous</button>
-        <button class="btn-nav" id="submitBtn">Submit &rarr;</i></button>
+        <a href="/profile/strengths" class="btn-nav" id="prevBtn">&larr; Previous</a>
+        <button type="submit" class="btn-nav" id="submitBtn">Submit &rarr;</button>
     </div>
+</form>

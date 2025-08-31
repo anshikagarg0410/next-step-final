@@ -64,6 +64,15 @@ nav .signout {
     border-radius: 25px;
     cursor: pointer;
 }
+.nav-login-btn {
+    text-decoration: none;
+    background-color: white;
+    color: #6910A8;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 .main-header {
     text-align: center;
@@ -794,6 +803,47 @@ nav .signout {
 .time {
     font-size: 12px;
     color: var(--text-light);
+}
+.hidden-match {
+    display: none;
+}
+/* ... (other styles) ... */
+
+.view-all-btn {
+    display: block; /* Make it a block-level element */
+    width: 100%;    /* Occupy full width of its parent */
+    padding: 12px 20px; /* Adjust padding as needed */
+    background-color: #6a0dad; /* Purple color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.view-all-btn:hover {
+    background-color: #5a099a; /* Darker purple on hover */
+}
+
+/* Ensure the parent container allows it to expand,
+   if the .internships card has padding, the button will fill the inner space. */
+.internships {
+    /* Example: if this card doesn't have padding, add it.
+       If it does, the button will naturally fit. */
+    padding: 20px; /* Adjust as needed, if not already present */
+    display: flex; /* Helps in layout */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: space-between; /* Pushes button to bottom if content above is short */
+}
+
+/* If you have specific styles for the internships items that might conflict with button width,
+   you might need to adjust them slightly, e.g.: */
+.internship-item {
+    margin-bottom: 15px; /* Add some space between items and button */
 }
 
 /* Responsive Design */

@@ -1,10 +1,14 @@
-<%- include('../partials/strength_template', { title: "Let's Know Your Interests" }) %>
-<div class="hero">
+<%- include('../partials/strength_template', { title: "Let's Know Your Strengths" }) %>
+
+<form action="/profile/strengths" method="POST">
+    <div class="hero">
         <h1>What’s Your Superpower?</h1>
         <p>Let AI guide your career—just tell us a bit about you.</p>
         <div class="progress-wrapper">
-            <div class="progress-text"> <span class="progress-step">Step 3 of 4</span> <span
-                    class="progress-percent">75% Complete</span> </div>
+            <div class="progress-text">
+                <span class="progress-step">Step 3 of 4</span>
+                <span class="progress-percent">75% Complete</span>
+            </div>
             <div class="progress-bar">
                 <div class="progress-fill" style="width: 75%;"></div>
             </div>
@@ -14,16 +18,23 @@
     <div class="strengths">
         <h2><i class="fa-solid fa-gear"></i> Your Strengths</h2>
         <p style="margin-left: 30px;">What do you believe is your secret ingredient to success?</p>
-        <div class="strength-options"> <label><input type="checkbox"> Time Management</label> <label><input
-                    type="checkbox"> Tech Savviness</label> <label><input type="checkbox"> Problem Solving</label>
-            <label><input type="checkbox"> Active Listening</label> <label><input type="checkbox"> Empathy</label>
-            <label><input type="checkbox"> Creativity</label> <label><input type="checkbox"> Leadership</label>
-            <label><input type="checkbox"> Multitasking</label> <label><input type="checkbox"> Organization</label>
-            <label><input type="checkbox"> Communication</label> <label><input type="checkbox"> Adaptability</label>
-            <label><input type="checkbox"> Research & Analysis</label>
+        <div class="strength-options">
+            <label><input type="checkbox" name="strengths" value="Time Management"> Time Management</label>
+            <label><input type="checkbox" name="strengths" value="Tech Savviness"> Tech Savviness</label>
+            <label><input type="checkbox" name="strengths" value="Problem Solving"> Problem Solving</label>
+            <label><input type="checkbox" name="strengths" value="Active Listening"> Active Listening</label>
+            <label><input type="checkbox" name="strengths" value="Empathy"> Empathy</label>
+            <label><input type="checkbox" name="strengths" value="Creativity"> Creativity</label>
+            <label><input type="checkbox" name="strengths" value="Leadership"> Leadership</label>
+            <label><input type="checkbox" name="strengths" value="Multitasking"> Multitasking</label>
+            <label><input type="checkbox" name="strengths" value="Organization"> Organization</label>
+            <label><input type="checkbox" name="strengths" value="Communication"> Communication</label>
+            <label><input type="checkbox" name="strengths" value="Adaptability"> Adaptability</label>
+            <label><input type="checkbox" name="strengths" value="Research & Analysis"> Research & Analysis</label>
         </div>
     </div>
     <div class="nav-buttons">
-        <button class="btn-nav" id="prevBtn">&larr; Previous</button>
-        <button class="btn-nav" id="nextBtn">Next &rarr;</i></button>
+        <a href="/profile/interests" class="btn-nav" id="prevBtn">&larr; Previous</a>
+        <button type="submit" class="btn-nav" id="nextBtn">Next &rarr;</button>
     </div>
+</form>

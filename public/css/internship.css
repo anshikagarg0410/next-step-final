@@ -42,6 +42,15 @@
             border-radius: 25px;
             cursor: pointer;
         }
+        .nav-login-btn {
+    text-decoration: none;
+    background-color: white;
+    color: #6910A8;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
         /* Hero */
         .hero {

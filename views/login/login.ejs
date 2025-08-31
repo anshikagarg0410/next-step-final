@@ -1,4 +1,4 @@
-<%- include('../partials/login_template') %>
+<% layout('partials/login_template') %>
 <div class="container">
         <div class="welcome-pane">
             <div class="logo">
@@ -9,39 +9,25 @@
             <img src="../img_1_astro.PNG" alt="AI Mentor Image" class="astro-img">
         </div>
         <div class="form-pane">
-            <div id="login-form">
-                <h2>Login</h2>
-                <form>
-                    <div class="input-group">
-                        <label for="login-email">Email</label>
-                        <input type="email" id="login-email" placeholder="you@example.com" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="login-password">Password</label>
-                        <input type="password" id="login-password" placeholder="••••••••" required>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                </form>
-                <p class="switch-form">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
-            </div>
-            <div id="signup-form" style="display: none;">
-                <h2>Create Your Account</h2>
-                <form>
-                    <div class="input-group">
-                        <label for="signup-name">Full Name</label>
-                        <input type="text" id="signup-name" placeholder="Your Name" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="signup-email">Email</label>
-                        <input type="email" id="signup-email" placeholder="you@example.com" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="signup-password">Password</label>
-                        <input type="password" id="signup-password" placeholder="••••••••" required>
-                    </div>
-                    <button type="submit" class="btn">Sign Up</button>
-                </form>
-                <p class="switch-form">Already have an account? <a href="#" id="show-login">Login</a></p>
-            </div>
+            <h2>Login</h2>
+
+            <% if(error && error.length) { %>
+                <div class="alert-error" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <form action="/login" method="POST">
+                 <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+             </form>
+            <p class="switch-form">Don't have an account? <a href="/signup">Sign Up</a></p>
         </div>
     </div>
